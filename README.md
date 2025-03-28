@@ -4,4 +4,4 @@ LRCLIB API Link Generator is a simple HTML site to create LRCLIB API Links
 
 ### [Download](https://github.com/Marcerf/lrclib-api-link-generator/releases/)
 
-![image]([https://github.com/user-attachments/assets/5f479f30-ee69-430a-83b7-018f23900389](https://i.ibb.co/PGX3FQx7/grafik.png))
+![image](https://i.ibb.co/PGX3FQx7/grafik.png)
