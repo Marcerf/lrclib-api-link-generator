@@ -1,4 +1,4 @@
-[![GitHub All Releases](https://img.shields.io/github/downloads/Marcerf/lrclib-api-link-generator/total?style=for-the-badge)](https://github.com/Marcerf/lrclib-api-link-generator/releases)
+[![GitHub All Releases](https://img.shields.io/github/downloads/Marcerf/lrclib-api-link-generator/total)](https://github.com/Marcerf/lrclib-api-link-generator/releases)
 
 LRCLIB API Link Generator is a simple HTML site to create LRCLIB API Links
 
