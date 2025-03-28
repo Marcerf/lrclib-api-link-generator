@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LRCLIB API URL Generator</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        input { display: block; margin: 10px auto; padding: 8px; width: 250px; }
+        button { padding: 10px 20px; cursor: pointer; }
+        #output { margin-top: 20px; font-weight: bold; color: blue; }
+    </style>
+</head>
+<body>
+
+    <h2>LRCLIB API URL Generator</h2>
+
+    <input type="text" class="song-name" placeholder="Song Name">
+    <input type="text" class="song-artist" placeholder="Artist">
+    <input type="text" class="song-duration" placeholder="Length (in seconds)">
+    <input type="text" class="song-album" placeholder="Album">
+    
+    <button onclick="generateLrclibURL()">Generate API URL</button>
+
+    <p id="output"></p>
+
+    <script>
+        function generateLrclibURL() {
+            let songName = document.querySelector(".song-name")?.value.trim() || "";
+            let songArtist = document.querySelector(".song-artist")?.value.trim() || "";
+
+            let baseUrl = "https://lrclib.net/api/get";
+
+            let params = new URLSearchParams({
+                track_name: songName,
+                artist_name: songArtist
+            });
+
+            let lrlclibUrl = `${baseUrl}?${params.toString()}`;
+
+            document.getElementById("output").textContent = lrlclibUrl;
+        }
+    </script>
+
+</body>
+</html>
